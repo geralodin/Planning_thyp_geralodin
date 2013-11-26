@@ -1,0 +1,169 @@
+<h1>Planning THYP 2013 - 2014</h1>
+<?php
+    include_once 'Cours.php';
+    
+    foreach ($cours as $c){
+        $module[] = new Cours($c['name'], $c['first_name'], $c['last_name'], $c['reference'], $c['heure_debut'], $c['heure_fin']);
+    }
+    
+    $cours_matin = array_reverse(array_slice($module, 0,3));
+    $cours_midi = array_slice($module, 4,2);
+    array_push($cours_midi, $module[3]); 
+    $cours_apres_midi = array_reverse(array_slice($module, 6,3));
+    
+    
+?>
+
+<table class="table-striped table-bordered table-condensed">
+    <thead>
+        <tr>  
+            <th>Heure</th>
+            <th>Lundi</th>
+            <th>Mardi</th>
+            <th>Mercredi</th>
+            <th>Jeudi</th>
+            <th>Vendredi</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <!-- tous les cours  à 9 heures -->
+        <tr>
+            <td class = "tdH"><?php echo $cours_matin[0]->heure_debut." - ".$cours_matin[0]->heure_fin;?></td>
+            <td class="tdC">
+                <div class="UE1-EC2">
+                    <h5 class="coursTitre"><?php echo $cours_matin[0]->intitule; ?></h5>
+                    <h4><?php echo $cours_matin[0]->intervenant_last_name." ".$cours_matin[0]->intervenant_first_name; ?></h4>
+                    <h5><?php echo $cours_matin[0]->lieu; ?></h5>
+                </div>
+            </td>
+
+            <td class="tdC">
+                <div>
+                    <h5 class="coursTitre"><?php echo $cours_matin[1]->intitule; ?></h5>
+                    <h4><?php echo $cours_matin[1]->intervenant_last_name." ".$cours_matin[1]->intervenant_first_name; ?></h4>
+                    <h5><?php echo $cours_matin[1]->lieu; ?></h5>
+                </div>
+            </td>
+
+            <td class="tdC">
+                <div>
+                    <h5 class="coursTitre"><?php echo $cours_matin[2]->intitule; ?></h5>
+                    <h4><?php echo $cours_matin[2]->intervenant_last_name." ".$cours_matin[2]->intervenant_first_name; ?></h4>
+                    <h5><?php echo $cours_matin[2]->lieu; ?></h5>
+                </div>
+            </td>   
+
+            <td class="tdC">
+                <div class="UE4-EC1">
+                    <h3></h3>
+                    <h5>Projets tutores</h5>
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+            </td>
+
+            <td class="tdC">
+                <div class="UE4-EC1">
+                    <h3></h3>
+                    <h5>Projets tutores</h5>
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+            </td>   
+       </tr>
+
+       <!-- tous les cours  à 12 heures -->
+        <tr>
+            <td class = "tdH"><?php echo $cours_midi[0]->heure_debut." - ".$cours_midi[0]->heure_fin;?></td>
+            <td class="tdC">
+                <div class="UE1-EC2">
+                    <h5 class="coursTitre"><?php echo $cours_midi[0]->intitule; ?></h5>
+                    <h4><?php echo $cours_midi[0]->intervenant_last_name." ".$cours_midi[0]->intervenant_first_name; ?></h4>
+                    <h5><?php echo $cours_midi[0]->lieu; ?></h5>
+                </div>
+            </td>
+
+            <td class="tdC">
+                <div>
+                    <h5 class="coursTitre"><?php echo $cours_midi[1]->intitule; ?></h5>
+                    <h4><?php echo $cours_midi[1]->intervenant_last_name." ".$cours_midi[1]->intervenant_first_name; ?></h4>
+                    <h5><?php echo $cours_midi[1]->lieu; ?></h5>
+                </div>
+            </td>
+
+            <td class="tdC">
+                <div>
+                    <h5 class="coursTitre"><?php echo $cours_midi[2]->intitule; ?></h5>
+                    <h4><?php echo $cours_midi[2]->intervenant_last_name." ".$cours_midi[2]->intervenant_first_name; ?></h4>
+                    <h5><?php echo $cours_midi[2]->lieu; ?></h5>
+                </div>
+            </td>
+
+            <td class="tdC">
+                <div class="UE4-EC2">
+                    <h3></h3>
+                    <h5>Projets tutores</h5>
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+            </td>
+
+            <td class="tdC">
+                <div class="UE4-EC2">
+                    <h3></h3>
+                    <h5>Projets tutores</h5>
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+            </td>   
+       </tr>
+
+       <!-- tous les cours  à 18 heures -->
+        <tr>
+            <td class = "tdH"><?php echo $cours_apres_midi[0]->heure_debut." - ".$cours_apres_midi[0]->heure_fin;?></td>
+            <td class="tdC">
+                <div class="UE1-EC2">
+                    <h5 class="coursTitre"><?php echo $cours_apres_midi[0]->intitule; ?></h5>
+                    <h4><?php echo $cours_apres_midi[0]->intervenant_last_name." ".$cours_apres_midi[0]->intervenant_first_name; ?></h4>
+                    <h5><?php echo $cours_apres_midi[0]->lieu; ?></h5>
+                </div>
+            </td>
+
+            <td class="tdC">
+                <div>
+                    <h5 class="coursTitre"><?php echo $cours_apres_midi[1]->intitule; ?></h5>
+                    <h4><?php echo $cours_apres_midi[1]->intervenant_last_name." ".$cours_apres_midi[1]->intervenant_first_name; ?></h4>
+                    <h5><?php echo $cours_apres_midi[1]->lieu; ?></h5>
+                </div>
+            </td>
+
+            <td class="tdC">
+                <div>
+                    <h5 class="coursTitre"><?php echo $cours_apres_midi[2]->intitule; ?></h5>
+                    <h4><?php echo $cours_apres_midi[2]->intervenant_last_name." ".$cours_apres_midi[2]->intervenant_first_name; ?></h4>
+                    <h5><?php echo $cours_apres_midi[2]->lieu; ?></h5>
+                </div>
+            </td>
+
+
+            <td class="tdC">
+                <div class="UE4-EC2">
+                    <h3></h3>
+                    <h5>Projet tutores</h5>
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+            </td>
+
+            <td class="tdC">
+                <div class="UE4-EC2">
+                    <h3></h3>
+                    <h5>Projets tutores</h5>
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+            </td>   
+       </tr>
+    </tbody>  
+</table>
