@@ -127,7 +127,6 @@ INSERT INTO `students` (`idusers`, `first_name`, `last_name`, `photo`) VALUES
 (5, 'Firdaous', 'Boumarsel', 'src="http://lh5.ggpht.com/-LGS2WxWRMrI/UlEOfHrfBLI/AAAAAAAAAD0/HHXf5jIM-64/s288/CAM00048.jpg" alt="CAM00048.jpg"/>'),
 (6, 'Maroua', 'SAID', 'src="http://lh4.ggpht.com/-OfWnOaFWzFY/UlEOg39zabI/AAAAAAAAABI/yKJjVto8oz0/s288/CAM00049.jpg" alt="CAM00049.jpg"/>'),
 (7, 'unknown0', 'unknown0', 'src="http://lh6.ggpht.com/-h7KPaIEV9f4/UlEOjTY3qPI/AAAAAAAAABY/R9W-UMsdZ1Y/s288/CAM00050.jpg" alt="CAM00050.jpg"/>'),
-(8, 'Soukaina', 'Chttou', 'src="http://lh6.ggpht.com/-VwQWFoNxrjY/UlEOh8uZviI/AAAAAAAAABM/LJvUUe5pbD4/s288/CAM00051.jpg" alt="CAM00051.jpg"/>'),
 (9, 'REMKI', 'Billel', 'src="http://lh4.ggpht.com/-4AlY6wzdzn0/UlEOknow0gI/AAAAAAAAABg/arLpMR06j3Y/s288/CAM00052.jpg" alt="CAM00052.jpg"/>'),
 (10, 'Naoufel', 'Ghandri', 'src="http://lh5.ggpht.com/-TEFM0UIP54c/UlEOlN7_RXI/AAAAAAAAABo/E_6t19P1PUI/s288/CAM00053.jpg" alt="CAM00053.jpg"/>'),
 (11, 'Abdelhafid', 'Bouchentouf', 'src="http://lh5.ggpht.com/-Z-yN5uKkyFM/UlEOlxSQvjI/AAAAAAAAABs/FGszR0K1Vrk/s288/CAM00055.jpg" alt="CAM00055.jpg"/>'),
