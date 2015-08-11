@@ -1,3 +1,3 @@
 Cette application affiche le planning de la formation thyp 2013 2014
-Pour que ça marche il faut créer une bdd nommé zf2.
-Le fichier qui crée la bdd ainsi que les tables est le fichier zf2.sql
+Pour que Ã§a marche il faut crÃ©er une bdd nommÃ© zf2.
+Le fichier qui crÃ©e la bdd ainsi que les tables sont dans le fichier zf2.sql
